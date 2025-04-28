@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="index.js" defer></script> <!-- Corrige o caminho do script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Amazon Search</title>
+</head>
+<body>
+    <div id="containerRelativo"> 
+        <form id="searchForm">
+            <label for="searchInput">Amazon Search:</label>
+            <input type="search" id="searchInput" class="pesquisar" placeholder="Digite o nome do produto" />
+            <button type="submit" id="searchButton" class="buttonPesquisa">Pesquisar</button>
+        </form>
+    </div>
+   
+    <div id="resultados" class="resultados"></div> <!-- Só uma div -->
+</body>
+</html>
