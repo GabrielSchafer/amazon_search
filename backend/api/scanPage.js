@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 
 async function scan(pesquisa) {
-  const url = `https://www.amazon.com.br/s?k=`.concat(pesquisa);
+  const url = "https://www.amazon.com.br/s?k=".concat(pesquisa);
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
 

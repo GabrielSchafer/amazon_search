@@ -5,17 +5,32 @@
     <meta charset="UTF-8">
     <script src="index.js" defer></script> 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  
     <link rel="stylesheet" href="stylesheet.css">
     <title>Amazon Search</title>
 </head>
 <body>
-    <div id="containerRelativo"> 
+    <div id="containerRelativo">
         <form id="searchForm">
-            <label for="searchInput">Amazon Search:</label>
-            <input type="search" id="searchInput" class="pesquisar" placeholder="Digite o nome do produto" />
-            <button type="submit" id="searchButton" class="buttonPesquisa">Pesquisar</button>
+            <label for="searchInput" style="display: flex; align-items: center; gap: 8px;">
+                Amazon Search
+                <img src="/assets/icon/amazon-logo-svgrepo-com.svg" alt="Amazon Logo" style="width: 50px; height: 50px; object-fit: contain;" />
+              </label>
+              
+          <div class="search-group">
+            <input type="text" class="pesquisar" id="searchInput" placeholder="Digite o nome do produto" />
+            <button class="buttonPesquisa" type="submit">
+                <i class="fas fa-magnifying-glass"></i> Buscar
+              </button>
+              
+          </div>
         </form>
-    </div>
+      </div>
+      
    
     <div id="resultados" class="resultados"></div>
 </body>
